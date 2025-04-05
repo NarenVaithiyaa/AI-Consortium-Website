@@ -54,12 +54,10 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .card:hover {
     transform: scale(1.05); 
     box-shadow: 0 15px 25px -3px rgba(33,150,243,.6), 0 6px 8px -4px rgba(33,150,243,.6);
 }
-
 
 .card .content {
     width: 100%;
@@ -77,13 +75,20 @@
 .card ul {
     list-style: none;
     padding: 0;
+    width: 100%;
 }
 
 .card ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
     color: white;
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
 
 button {
@@ -99,11 +104,14 @@ button {
     width: 70%;
     text-shadow: 0px 4px 18px #2c3442;
     cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: rgb(24, 120, 200);
 }
 
 .reg-button {
-    display: block;
-    margin: 20px auto;
     border: none;
     outline: none;
     color: rgb(255, 255, 255);
@@ -116,15 +124,16 @@ button {
     width: 300px;
     text-shadow: 0px 4px 18px #2c3442;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+    
 }
 
 .reg-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 15px rgba(33, 150, 243, 0.6);
+    background-color: rgb(24, 120, 200);
 }
-
+  
 
 .table-container {
     background: white;
